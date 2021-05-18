@@ -10,13 +10,25 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>React App</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="container">
+      <h1>Tasks</h1>
+      <button className="btn btn-block">ADD</button>
+      <form>
+        <label htmlFor="task">Task: 
+        <input 
+          type="text" 
+          name="task" 
+          id="task"
+        /></label>
+      </form>
+    </div>
   </body>
 </html>
